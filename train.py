@@ -192,9 +192,9 @@ def validate(val_loader, model, criterion):
 
         prec1, prec5 = accuracy(output.data, target, topk=(1, 5))
 
-        losses.update(loss.data[0], input.size(0))
-        top1.update(prec1[0], input.size(0))
-        top5.update(prec5[0], input.size(0))
+        losses.update(loss.item(), input.size(0))
+        top1.update(prec1.item(), input.size(0))
+        top5.update(prec5.item(), input.size(0))
 
         batch_time.update(time.time() - end)
         end = time.time()
