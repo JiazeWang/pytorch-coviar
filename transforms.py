@@ -142,6 +142,7 @@ class GroupMultiScaleCrop(object):
         crop_h = [self.input_size[1] if abs(x - self.input_size[1]) < 3 else x for x in crop_sizes]
         crop_w = [self.input_size[0] if abs(x - self.input_size[0]) < 3 else x for x in crop_sizes]
 
+
         pairs = []
         for i, h in enumerate(crop_h):
             for j, w in enumerate(crop_w):
