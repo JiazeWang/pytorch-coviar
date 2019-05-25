@@ -25,7 +25,7 @@ parser.add_argument('--test-list', type=str)
 parser.add_argument('--weights', type=str)
 parser.add_argument('--arch', type=str)
 parser.add_argument('--save-scores', type=str, default=None)
-parser.add_argument('--test_segments', type=int, default=25)
+parser.add_argument('--test_segments', type=int, default=20)
 parser.add_argument('--test-crops', type=int, default=10)
 parser.add_argument('--input_size', type=int, default=224)
 parser.add_argument('-j', '--workers', default=1, type=int, metavar='N',
